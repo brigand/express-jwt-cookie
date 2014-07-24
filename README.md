@@ -1,18 +1,23 @@
-# express-jwt
-
-[![Build](https://travis-ci.org/auth0/express-jwt.png)](http://travis-ci.org/auth0/express-jwt)
+# express-jwt-cookie
 
 Middleware that validates JsonWebTokens and set `req.user`.
 
 This module lets you authenticate HTTP requests using JWT tokens, in your Node.js
 applications.  JWT tokens are typically used protect API endpoints, and are
-often issued using OpenID Connect.
+often issued using OpenID Connect.  This is a modified version of express-jwt 
+which works with cookies instead of an Authorization header.
+
 
 ## Install
 
-    $ npm install express-jwt
+    $ npm install brigand/express-jwt-cookie#0.4.0
 
-## Usage
+## TODO
+
+Update the below docs.  They don't apply to express-jwt-cookie.
+
+
+## --Usage--
 
 The JWT authentication middleware authenticates callers using a JWT
 token.  If the token is valid, `req.user` will be set with the JSON object decoded to be used by later middleware for authorization and access control.
